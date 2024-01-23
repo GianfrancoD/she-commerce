@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template: repeat(minmax(1,1fr))/repeat(minmax(1,1fr));
+    min-height: 30vh;
+    min-width: 100vw;
+
+    .cabecera {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 33%, rgba(215,212,212,1) 71%);
+
+        & ul {
+            display: flex;
+            place-content: center end;
+            place-items: center;
+            gap: 10px 4vw;
+            padding: 10px;
+            min-height:auto;
+            min-width: 100vw;
+            list-style: none;
+            & li {
+                width: 8vw;
+                height: 5vh;
+                display: grid;
+                place-content: center;
+                border-radius: 30%;
+            }
+            & a:hover{
+                cursor: pointer;
+                font-size: 10px;
+
+            }
+            & a{
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 13px;
+                color:#000;
+                text-shadow: 2px 2px 3px rgb(172, 169, 169);
+            }
+                .login{
+                    color:#fff;
+                    box-shadow: 3px 3px 7px grey;
+                    border-radius: 20% 2%;
+                    border: 1px solid #ccc;
+                    min-width: 4vw;
+                    min-height: 4vh;
+                    display: grid;
+                    background: linear-gradient(74deg, rgba(241,241,241,1) 14%, rgba(255,0,128,1) 100%);
+                    place-content: center;
+                    place-items: center;
+                }
+            
+        }
+    }
+
+    .container{
+        display: grid;
+        grid-template: repeat(auto-fill, minmax(1,1fr))/repeat(auto-fill, minmax(400px,1fr));
+        & article{
+            text-align: center;
+        }
+        .item2{
+            grid-column: 2/4;
+            display: grid;
+            grid-template: repeat(auto-fill,1fr)/repeat(auto-fill,1fr);
+            & img{
+                width: 50vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+        .item{
+            display: grid;
+            grid-template: repeat(auto-fill, minmax(1,1fr))/ repeat(auto-fill, minmax(300px,1fr));
+            & header{
+                min-width: 10vw;
+                min-height: 10vh;
+                display: grid;
+                place-content: center;
+                & h1{
+                    color:grey;
+                    font-size: 60px;
+                }
+            }
+            & button {
+                width: 10vw;
+                height: 6vh;
+                margin: auto;
+                border-radius: 10px;
+                background: pink;
+                color:#fff;
+                font-size: 14px;
+                box-shadow: 5px 3px 5px rgb(171, 170, 170);
+                text-transform:uppercase;
+                border: none;
+                cursor: pointer;
+            }
+            & strong {
+                letter-spacing: 3px;
+                hyphens: auto;
+                color:grey;
+                display: grid;
+                place-items: center;
+            }
+        }
+        .noticia{
+            display:grid;
+            grid-column: 1/4;
+            place-content: center center;
+            font-size: 30px;
+            text-transform: uppercase;
+            background: grey;
+            color: white;
+        }
+        .cards{
+            min-width: 10vw;
+            min-height: 10vh;
+            display: grid;
+            grid-template: repeat(1, 1fr)/repeat(auto-fill, minmax(370px, 1fr));
+            grid-column:1/4;
+            gap: 10px;
+            margin: 10px;
+            .card{
+                grid-template: repeat(3,1fr)/repeat(1,1fr);
+                & header {
+                    & h2{
+                        color: green;
+                    }
+                }
+                & img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    border-radius: 10px;
+                }
+                .content{
+                    background: rgb(229, 229, 229);
+                    border-radius: 8px 8px 0px 0px;
+                }
+                .footer_card{
+                    background:black;
+                    color: white;
+                    border-radius: 0px 0px 8px 8px;
+                }
+                .titulos{
+                    display: grid;
+                    grid-template:repeat(1,1fr)/repeat(auto-fill, minmax(150px, 1fr));
+                    & p{
+                        color:red;
+                        display: grid;
+                        place-content: center center;
+                        min-width: 10vw;
+                        min-height: 10vh;
+                    }
+                    & h2 {
+                        display: grid;
+                        place-content: center center;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        min-width: 100vw;
+        min-height: 10vh;
+        background: pink;
+        display: grid;
+        grid-template: repeat(1,1fr)/ repeat(1,1fr);
+        place-items: center;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "she-commerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GianfrancoD/she-commerce.git",
+  "author": "GianfrancoD <gianfranco.dfiore@gmail.com>",
+  "license": "MIT"
+}
