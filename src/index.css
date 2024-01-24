@@ -4,18 +4,15 @@
     margin:0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 body{
     display: grid;
     grid-template: repeat(minmax(1,1fr))/repeat(minmax(1,1fr));
     min-height: 30vh;
     min-width: 100vw;
-
     .cabecera {
         display: flex;
         align-items: center;
         background: linear-gradient(0deg, rgba(255,255,255,1) 33%, rgba(215,212,212,1) 71%);
-
         & ul {
             display: flex;
             place-content: center end;
@@ -56,10 +53,8 @@ body{
                     place-content: center;
                     place-items: center;
                 }
-            
         }
     }
-
     .container{
         display: grid;
         grid-template: repeat(auto-fill, minmax(1,1fr))/repeat(auto-fill, minmax(400px,1fr));
@@ -169,7 +164,6 @@ body{
             }
         }
     }
-
     .footer{
         min-width: 100vw;
         min-height: 10vh;
