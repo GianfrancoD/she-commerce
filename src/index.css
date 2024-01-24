@@ -181,3 +181,12 @@ body{
 
     }
 }
+@media (min-width: 30em) and (max-width: 50em) {
+            .img_aside{
+                display: none;
+            }
+            .item{
+                display: grid;
+                grid-column: 1/4;
+            }
+        }
