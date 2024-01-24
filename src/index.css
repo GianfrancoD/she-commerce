@@ -175,7 +175,7 @@ body{
 
     }
 }
-@media (min-width: 30em) and (max-width: 60em) {
+@media (min-width: 0em) and (max-width: 60em) {
             .img_aside{
                 display: none;
             }
